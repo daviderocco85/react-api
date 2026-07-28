@@ -1,22 +1,24 @@
-#root {
-    padding: 1rem;
+#root .header-container {
+    background-color: blanchedalmond;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
 }
 
 #root h1 {
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
 }
 
 
 #root .feature-actresses {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    margin: 0 auto;
     min-width: max-content;
 }
 
 #root .navigation {
     display: flex;
     align-items: center;
+    margin-left: 1rem;
     gap: 1rem;
     margin-bottom: 1rem;
 }

@@ -6,9 +6,45 @@
     margin-bottom: 1.5rem;
 }
 
+
 #root .feature-actresses {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     min-width: max-content;
+}
+
+#root .navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#root .navigation button {
+    padding: 0.5rem 1rem;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+
+}
+
+#root .navigation button:hover {
+    transform: translateY(-2px);
+}
+
+#root .page-number {
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+
+#root .page-number::after {
+    content: "...22";
+    margin-left: 0.3rem;
+    opacity: 0.7;
 }

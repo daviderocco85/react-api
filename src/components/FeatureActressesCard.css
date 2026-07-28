@@ -3,12 +3,14 @@
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .feature-card .pic-actresses {
     aspect-ratio: 1 / 1;
-    height: 250px;
+    width: 250px;
+    height: 370px;
 }
 
 .feature-card img {
@@ -21,11 +23,19 @@
 .feature-card .bio {
     flex-grow: 1;
     background-color: blanchedalmond;
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 
+}
+
+.feature-card .bio h2 {
+    font-size: 1.6rem;
+}
+
+.feature-card .bio p {
+    font-size: 1.3rem;
 }
 
 .feature-card .bio p span {

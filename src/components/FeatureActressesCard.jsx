@@ -16,11 +16,16 @@ export const FeatureActressesCard = props => {
                     <p>Bio - <span>{props.featureActresses.biography}</span></p>
                     <p>Awards - <span>{props.featureActresses.awards
                         .map(a => a.replace(/Awards?/i, '').trim())
-                        .join(' ')}
+                        .join(' - ')}
                     </span>
                     </p>
-                </div>
-            </div>
+                    <p>Most famous movies - <span>{props.featureActresses.known_for
+                        .map(movies => movies).join(' - ')}</span>
+                    </p>
+                </div >
+            </div >
         </>
     );
 };
+
+

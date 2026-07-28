@@ -52,7 +52,9 @@ export const App = () => {
 
   return (
     <>
-      <h1>Famous Actresses</h1>
+      <div className='header-container'>
+        <h1>Famous Actresses</h1>
+      </div>
       <div className='navigation'>
         <button
           onClick={() => setPage
